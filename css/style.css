@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    /* color: white; */
+}
+
+/* ####################   Common elements styling   ################### */
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* #####################   Utility Classes   ##################### */
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}/* ::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+}
+.btn-secondary:hover{
+    background-color: #f0e7e8;
+}
+
+/* ############################# header styling ####################  */
+
+.header{
+    position: relative;
+    height: 95vh;
+    /* border: 4px solid red; */
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/header-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+/* .header .logo,
+.header .navbar a{
+    color: white;
+} */
+
+.navbar .logo{
+    /* font-weight: 400; */
+    float: left;
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* #####################   header content styling   ####################  */
+
+.header-content{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-align: center;  */
+}
+
+.header-content p{
+    /* text-align: center;  */
+    text-transform: uppercase;
+}
+
+/* ###########################   Section Showcase Styling   ##################  */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    /* border: 2px solid red; */
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.row .img-box{
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .text-box{
+    /* border: 2px solid purple; */
+    padding: 3rem;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+/* ##########################  Section Feature Styling   ###################  */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.295);
+    /* border: 2px solid green; */
+}
+
+.box{
+    width:33.3333333%;
+    float: left;
+    text-align: center;
+    padding: 2rem;
+    /* border: 2px solid red; */
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-2{
+    background:linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #fff;
+}
+
+/* ####################   footer styling   ####################  */
+
+.footer{
+    background-color: #263238;
+}
+
+.footer-text{
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.footer-text a,
+.footer-text a:visited{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons{
+    padding: 1rem;
+}
+
+/* ################# About header styling   ################  */
+
+.about{
+    padding: 5rem 0;
+    /* border: 2px solid blue; */
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border: 2px solid #e63946;
+}
+
+/* #######################  About features styling   ###############  */
+
+.about-features{
+    /* border: 2px solid blue; */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.left-feat{
+    float: left;
+    width: 50%;
+}
+
+.right-feat{
+    float: right;
+    width: 50%;
+}
+
+.about-features li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.about-features::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################### about data styling   #################  */
+
+.about-data{
+    /* border: 2px solid blueviolet; */
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.about-data::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-data-items{
+    float: left;
+    width: 25%;
+}
+
+.about-data span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.data-para{
+    font-weight: 700;
+    color: #555;
+}
+
+/* ####################   about-contact-banner styling   ####################   */
+
+.contact-banner{
+    /* border: 2px solid brown; */
+    padding: 2rem 1rem;
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 20px 0 rgb(180, 173, 173);
+}
+
+.contact-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ct-banner-left{
+    /* border: 2px solid yellow; */
+    float: left;
+    width: 60%;
+}
+
+.ct-line{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0.7rem;
+}
+
+.ct-banner-right{
+    /* border: 2px solid aqua; */
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.ct-btn{
+    padding:0.5em 2.5em;
+    color: #fff;
+    border: 3px solid white;
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+/* ########################   contact-page styling   #################  */
+
+.contact{
+    /* font-size: 3rem; */
+    padding: 5rem 0;
+    background: #eeeeee;
+}
+
+/* .form-wrapper{} */
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-address{
+    /* border: 2px solid green; */
+    height: 800px;
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    background: #fff;
+}
+
+.address-group{
+    margin-bottom: 3rem;
+}
+
+.contact-address .address-group i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.contact-address .address-group h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.contact-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+.contact-form{
+    /* border: 2px solid brown; */
+    height: 800px;
+    float: right;
+    width: 49%;
+    background: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.contact-form h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    border: 2px solid #e63946;
+}
+
+.form-group{
+    /* border: 2px solid blue; */
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-group label{
+    display: block;
+}
+
+.contact-form .form-group label::after{
+    content: ' *';
+    color: #e63946;
+}
+
+.contact-form .form-group input{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact-form .form-group textarea{
+    width: 100%;
+    height: 350px;
+    padding: 0.5rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 4rem;
+    color: #fff;
+    background-color: #e63946;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* #######################  Media Queries (Responsive Styling)  #######################  */
+
+@media (max-width: 460px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar .logo,
+    .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box{
+        float: none;
+        width: 100%;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+
+    .box-wrapper .box{
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.295);
+        /* border: 2px solid green; */
+    }
+
+
+
+    .box-wrapper .box-2,
+    .box-wrapper .box-3{
+        margin-top: 5rem;
+    }
+
+    .ct-banner-left{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .ct-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-address{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .logo,
+    .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box{
+        float: none;
+        width: 100%;
+    }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+
+    .box-wrapper .box{
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.295);
+        /* border: 2px solid green; */
+    }
+
+
+
+    .box-wrapper .box-2,
+    .box-wrapper .box-3{
+        margin-top: 5rem;
+    }
+
+    .ct-banner-left{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .ct-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-address{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact-form{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1080px){
+    html{
+        font-size: 50%;
+    }
+
+    .ct-line{
+        font-size: 1.8rem;
+    }
+
+    .ct-btn{
+        font-size: 2.5rem;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px){
+    .header{
+        height: 90vmax;
+    }
+}
